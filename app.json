@@ -31,6 +31,9 @@
         "projectId": "a29136a4-f842-4c6e-a383-1e72ef665950"
       }
     },
-    "owner": "demiprofess.in"
+    "owner": "demiprofess.in",
+    "updates": {
+      "url": "https://u.expo.dev/a29136a4-f842-4c6e-a383-1e72ef665950"
+    }
   }
 }
