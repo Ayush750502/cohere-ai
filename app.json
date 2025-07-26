@@ -28,12 +28,15 @@
     },
     "extra": {
       "eas": {
-        "projectId": "a29136a4-f842-4c6e-a383-1e72ef665950"
+        "projectId": "44c68409-3a75-4f08-9674-b1ced50fb08b"
       }
     },
     "owner": "demiprofess.in",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "updates": {
-      "url": "https://u.expo.dev/a29136a4-f842-4c6e-a383-1e72ef665950"
+      "url": "https://u.expo.dev/44c68409-3a75-4f08-9674-b1ced50fb08b"
     }
   }
 }
