@@ -17,7 +17,8 @@
     "formik": "^2.4.6",
     "react": "19.0.0",
     "react-native": "0.79.5",
-    "yup": "^1.6.1"
+    "yup": "^1.6.1",
+    "react-native-screens": "~4.11.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
