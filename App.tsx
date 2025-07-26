@@ -3,12 +3,12 @@ import { View } from 'react-native';
 
 import { styles } from "./styles";
 
-import Login from './screens/Login';
+import Router from './Router';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Login />
+      <Router />
     </View>
   );
 }
