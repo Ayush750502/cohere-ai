@@ -25,6 +25,7 @@ export type User = {
 
 export type conversations = {
   id: number;
+  title? : string;
   conversation: chat[];
 };
 
