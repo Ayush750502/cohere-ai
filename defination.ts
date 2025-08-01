@@ -6,7 +6,10 @@ export type RootStackParamList = {
   SignUp: undefined;
   AppDrawer: undefined;
   Dashboard: undefined;
-  Chat: { conversationId?: number };
+  Chat: { 
+    conversationId?: number,
+    conversationTitle?: string
+  };
 };
 
 export type AppDrawerParamList = {
