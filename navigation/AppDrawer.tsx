@@ -77,8 +77,8 @@ function CustomDrawerContent(props: any) {
     props.navigation.navigate('Chat', { conversationId: newId });
   };
 
-  const handleLoadConversation = (id: number) => {
-    props.navigation.navigate('Chat', { conversationId: id });
+  const handleLoadConversation = (id: number, title: string) => {
+    props.navigation.navigate('Chat', { conversationId: id, conversationTitle: title });
   };
 
   const handleLongPress = (id: number) => {
@@ -139,7 +139,7 @@ function CustomDrawerContent(props: any) {
         {conversationIds.map((id) => (
           <TouchableOpacity
             key={id}
-            onPress={() => handleLoadConversation(id)}
+            onPress={() => handleLoadConversation(id , conversationTitles[id])}
             onLongPress={() => handleLongPress(id)}>
             <Text style={styles.convoItem}>{conversationTitles[id] || `Conversation #${id}`}</Text>
           </TouchableOpacity>
@@ -195,7 +195,13 @@ export default function AppDrawer() {
       })}
     >
       <Drawer.Screen name="Dashboard" component={Dashboard} />
-      <Drawer.Screen name="Chat" component={Chat} />
+      <Drawer.Screen
+        name="Chat"
+        component={Chat}
+        options={({ route }) => ({
+          title: route.params?.conversationTitle || 'Chat',
+        })}
+      />
     </Drawer.Navigator>
   );
 }
